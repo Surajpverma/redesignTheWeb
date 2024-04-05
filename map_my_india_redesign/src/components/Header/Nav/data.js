@@ -1,41 +1,41 @@
 export const links = [
     {
-        title: "Projects",
+        title: "Products",
         href: "/"
     },
     {
-        title: "Agency",
+        title: "Solutions",
         href: "/"
     },
     {
-        title: "Expertise",
+        title: "Consumer",
         href: "/"
     },
     {
-        title: "Careers",
+        title: "Developers",
         href: "/"
     },
     {
-        title: "Contact",
+        title: "Company",
         href: "/"
     }
 ]
 
 export const footerLinks = [
     {
-        title: "Facebook",
+        title: "Login",
         href: "/"
     },
     {
-        title: "LinkedIn",
+        title: "Resources",
         href: "/"
     },
     {
-        title: "Instagram",
+        title: "Investors",
         href: "/"
     },
     {
-        title: "Twitter",
+        title: "Contact Us",
         href: "/"
     }
 ]
