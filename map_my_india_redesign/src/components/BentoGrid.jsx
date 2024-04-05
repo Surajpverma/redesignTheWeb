@@ -13,27 +13,27 @@ import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
 
   const items = [
     {
-      title: "The Dawn of Innovation",
-      description: "Explore the birth of groundbreaking ideas and inventions.",
+      title: "Map Data",
+      description: "Location data reflecting the real world",
       header: <img src="https://www.mapmyindia.com/images/map-data-img.png" />,
       // icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
     },
     {
-      title: "The Digital Revolution",
-      description: "Dive into the transformative power of technology.",
-      header: <img src="https://www.mapmyindia.com/images/map-data-img.png" />,
+      title: "Geo-demographic Data",
+      description: "Updated, reliable, industry data",
+      header: <img src="https://www.mapmyindia.com/images/mgis_img.png" />,
       // icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
     },
     {
-      title: "The Art of Design",
-      description: "Discover the beauty of thoughtful and functional design.",
-      header: <img src="https://www.mapmyindia.com/images/map-data-img.png" />,
+      title: "RealView",
+      description: "India’s very own 360° panoramic street images service.",
+      header: <img src="https://www.mapmyindia.com/images/maps_map.png" />,
       // icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
     },
     {
-      title: "The Power of Communication",
+      title: "Map Portal",
       description:
-        "Understand the impact of effective communication in our lives.",
+        "India's original internet mapping portal. Hyperlocal. Precise. Updated",
       header: <img src="https://www.mapmyindia.com/images/map-data-img.png" />,
       // icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
     },
