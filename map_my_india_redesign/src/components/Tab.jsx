@@ -2,16 +2,19 @@
 
 import Image from "next/image";
 import { Tabs } from "./ui/tabs";
+import BentoGridDemo from "@/components/BentoGrid";
 
 export default function Tab() {
+
+
   const tabs = [
     {
       title: "Map and Data",
       value: "Map and Data",
+
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-[#da8e50] to-[#da6201]">
-          <p>Map and Data</p>
-          <DummyContent />
+          <BentoGridDemo  />
         </div>
       ),
     },
@@ -20,8 +23,7 @@ export default function Tab() {
       value: "APIs and SDKs",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-[#da8e50] to-[#da6201]">
-          <p>APIs and SDKs</p>
-          <DummyContent />
+          <BentoGridDemo />
         </div>
       ),
     },
@@ -30,8 +32,7 @@ export default function Tab() {
       value: "GIS, Analytics and AI",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-[#da8e50] to-[#da6201]">
-          <p>GIS, Analytics and AI</p>
-          <DummyContent />
+          <BentoGridDemo />
         </div>
       ),
     },
@@ -40,8 +41,7 @@ export default function Tab() {
       value: "IoT and Automation",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-[#da8e50] to-[#da6201]">
-          <p>IoT and Automation</p>
-          <DummyContent />
+          <BentoGridDemo />
         </div>
       ),
     },
@@ -50,15 +50,14 @@ export default function Tab() {
       value: "Navigation and Mobility",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-[#da8e50] to-[#da6201]">
-          <p>Navigation and Mobility</p>
-          <DummyContent />
+          <BentoGridDemo />
         </div>
       ),
     },
   ];
 
   return (
-    <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start my-40">
+    <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start my-10">
       <Tabs tabs={tabs} />
     </div>
   );

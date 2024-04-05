@@ -2,8 +2,8 @@ import { HoverEffect } from "./ui/card-hover-effect";
 
 export default function Solution() {
   return (
-    <div className="max-w-5xl mx-auto px-8 flex items-center justify-center flex-col">
-        <p className=" text-5xl font-bold">Solutions</p>
+    <div className="max-w-5xl mx-auto px-8 flex items-center justify-center flex-col ">
+        <p className=" text-5xl font-bold mt-10">Solutions</p>
         <p className=" text-lg py-4">Bespoke end-to-end technology solutions
 to solve critical industry challenges.</p>
       <HoverEffect items={projects} />
