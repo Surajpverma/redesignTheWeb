@@ -8,7 +8,7 @@ import {
 } from "@react-three/drei";
 import { useThree } from "@react-three/fiber";
 import { useAtom } from "jotai";
-import { useControls } from "leva";
+// import { useControls } from "leva";
 import { useEffect, useRef } from "react";
 import { slideAtom } from "./Overlay";
 import { Scene } from "./Scene";
@@ -47,19 +47,19 @@ const CameraHandler = ({ slideDistance }) => {
   const [slide] = useAtom(slideAtom);
   const lastSlide = useRef(0);
 
-  const { dollyDistance } = useControls({
-    dollyDistance: {
-      value: 10,
-      min: 0,
-      max: 50,
-    },
-  });
+  // const { dollyDistance } = useControls({
+  //   dollyDistance: {
+  //     value: 10,
+  //     min: 0,
+  //     max: 50,
+  //   },
+  // });
 
   const moveToSlide = async () => {
     await cameraControls.current.setLookAt(
       lastSlide.current * (viewport.width + slideDistance),
       3,
-      dollyDistance,
+      // dollyDistance,
       lastSlide.current * (viewport.width + slideDistance),
       0,
       0,
@@ -68,7 +68,7 @@ const CameraHandler = ({ slideDistance }) => {
     await cameraControls.current.setLookAt(
       (slide + 1) * (viewport.width + slideDistance),
       1,
-      dollyDistance,
+      // dollyDistance,
       slide * (viewport.width + slideDistance),
       0,
       0,
@@ -127,18 +127,18 @@ const CameraHandler = ({ slideDistance }) => {
 
 export const Experience = () => {
   const viewport = useThree((state) => state.viewport);
-  const { slideDistance } = useControls({
-    slideDistance: {
-      value: 1,
-      min: 0,
-      max: 10,
-    },
-  });
+  // const { slideDistance } = useControls({
+  //   slideDistance: {
+  //     value: 1,
+  //     min: 0,
+  //     max: 10,
+  //   },
+  // });
   return (
     <>
       <mesh
         key={0}
-        position={[0 * (viewport.width + slideDistance), 0, 0]}
+        position={[0 * (viewport.width ), 0, 0]}
       >
         <planeGeometry args={[viewport.width, viewport.height]} />
         <meshBasicMaterial toneMapped={false}>
